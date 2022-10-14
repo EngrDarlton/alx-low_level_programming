@@ -1,2 +1,2 @@
 #!/bin/bash
-betty hello $CFILE -o c
+gcc hello $CFILE -o c
