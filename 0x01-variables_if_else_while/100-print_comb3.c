@@ -8,19 +8,25 @@
 
 int main(void)
 {
-	int x;
+	int x, y;
 
 	for (x = '0'; x <= '9' ; x++)
 	{
-		putchar(x);
+		for (y = '0'; y <= '9'; y++)
+		{
+			if (x < y)
+			{
+				putchar(x);
+				putchar(y);
 
-		if (x != '9')
+		if (x != '9' || (x == '8' && y != '9'))
 		{
 			putchar(',');
 			putchar(' ');
 		}
 	}
-
+}
+}
 	putchar('\n');
 	return (0);
 
