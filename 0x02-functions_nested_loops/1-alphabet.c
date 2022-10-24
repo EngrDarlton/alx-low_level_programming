@@ -2,12 +2,12 @@
 #include "main.h"
 
 /**
- * main - Entry Point
+ * print_alphabet - Entry Point
  * Description: Print alphabeth with putchar
  * Return: 0 Success
  */
 
-int main(void)
+void print_alphabet(void)
 {
 	char letters;
 
