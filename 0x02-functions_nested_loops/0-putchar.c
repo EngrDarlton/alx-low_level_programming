@@ -1,24 +1,24 @@
 #include <stdio.h>
-#include <main.h>
-/*
- * main - Entry Point
- * Description: 'Prints _putchar'
- * Return : 0
+#include "main.h"
+
+/**
+ * main - Entry point
+ * Description: Prints putchar
+ * Return: Always 0 success
  */
 
 
 int main(void)
 {
-		char str[] = "_putchar\n";
-		int i = 0;
+		char var[] = "_putchar";
+		int i;
+		int lvel = sizeof(var) / sizeof(var[0]);
 
-		while (str[i] != '\0')
+		for (i = 0; i < lvel - 1; i++)
 		{
-			char c = str[i];
-
-			_putchar(c);
-
-			i++;
+			_putchar(var[i]);
 		}
+		_putchar('\n');
+
 		return (0);
 }
